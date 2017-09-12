@@ -4,7 +4,7 @@ const toget = require('toget');
 const { parseString } = require('xml2js');
 
 /**
- *
+ * PEPWAVE API Client
  *
  * @class Pepwave
  */
@@ -24,14 +24,14 @@ class Pepwave {
     this.request = toget(opts.url);
 
     /**
-     *
+     * Pepwave admin username.
      *
      * @type {string}
      */
     this.username = opts.username;
 
     /**
-     *
+     * Pepwave admin password.
      *
      * @type {string}
      */
@@ -39,9 +39,9 @@ class Pepwave {
   }
 
   /**
+   * Logins into Pepwave with {@link Pepwave#username} and {@link Pepwave#password}.
    *
-   *
-   * @returns
+   * @returns {object}
    * @memberof Pepwave
    */
   login() {
@@ -66,8 +66,9 @@ class Pepwave {
   }
 
   /**
+   * Get latitude and longitude from connected GPS.
    *
-   *
+   * @returns {object}
    * @memberof Pepwave
    */
   getGeoInfo() {
@@ -85,9 +86,10 @@ class Pepwave {
   }
 
   /**
+   * Parses XML to JSON.
    *
-   *
-   * @returns
+   * @private
+   * @returns {object}
    * @memberof Pepwave
    */
   static _xml2Json(input) {
