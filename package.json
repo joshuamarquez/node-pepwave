@@ -1,0 +1,33 @@
+{
+  "name": "pepwave",
+  "version": "0.1.0",
+  "description": "PEPWAVE API Client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuamarquez/node-pepwave.git"
+  },
+  "keywords": [
+    "pepwave",
+    "router",
+    "client"
+  ],
+  "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuamarquez/node-pepwave/issues"
+  },
+  "homepage": "https://github.com/joshuamarquez/node-pepwave#readme",
+  "devDependencies": {
+    "eslint": "4.x",
+    "eslint-config-airbnb-base": "12.x",
+    "eslint-plugin-import": "2.x"
+  },
+  "dependencies": {
+    "toget": "0.4.x",
+    "xml2js": "0.4.x"
+  }
+}
